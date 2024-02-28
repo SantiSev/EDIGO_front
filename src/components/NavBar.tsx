@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Edigo from '../assets/EdigoLogo.svg'
-import profileIcon from '../assets/profileIcon.svg'
-import searchIcon from '../assets/searchIcon.svg'
-import collaboratorsIcon from '../assets/collaboratorsIcon.svg'
-import iGIcon from '../assets/igIcon.svg'
+import Edigo from '../assets/navBarAssets/EdigoLogo.svg'
+import profileIcon from '../assets/navBarAssets/profileIcon.svg'
+import searchIcon from '../assets/navBarAssets/searchIcon.svg'
+import collaboratorsIcon from '../assets/navBarAssets/collaboratorsIcon.svg'
+import iGIcon from '../assets/navBarAssets/igIcon.svg'
 
 
 const Navbar: React.FC = () => {
@@ -12,11 +12,11 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+      setIsMobile(window.innerWidth <= 720);
     };
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Check on initial render
+    handleResize(); 
 
     return () => {
       window.removeEventListener('resize', handleResize);
