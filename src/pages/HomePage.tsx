@@ -12,6 +12,7 @@ import Categories from '../components/Categories'
 export default class HomePage extends Component {
 
   images = [b1,b2,b3,b4];
+  categories = ["Camperas", "Remeras", "Pantalones", "Vestidos", "Polleras", "Accesorios"]
 
   render() {
     return (
@@ -19,8 +20,7 @@ export default class HomePage extends Component {
         <Navbar />
         <Background>
           <Banner images={this.images}/>
-          <Categories/>
-          <div>HomePage</div>
+          <Categories categories={this.categories}/>
         </Background>
       </>
     )

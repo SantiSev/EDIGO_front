@@ -10,7 +10,7 @@ const Background: React.FC<BackgroundProps> = ({ children }) => {
         <div className="absolute bg-white w-full h-full">
             {children}
 
-            <img className='absolute bottom-0 w-full h-1/6' src={wavesSgv} alt="none" />
+           {/*  <img className='absolute bottom-0 w-full h-1/6' src={wavesSgv} alt="none" /> */}
         </div >
     );
 };
