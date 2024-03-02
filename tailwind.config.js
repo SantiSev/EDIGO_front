@@ -8,7 +8,7 @@ export default {
     extend: {},
     fontFamily:{
       satoshi: ["Satoshi"]
-    }
+    },
   },
   plugins: [],
 }
