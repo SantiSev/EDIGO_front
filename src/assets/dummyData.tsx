@@ -27,7 +27,7 @@ export const featured: string[] = ['article1', 'article2', 'article3'];
 
 export interface ArticleThumbnailProps {
   name: string;
-imageUrl: string;
+  imageUrl: string;
 }
 
 export const articles: ArticleThumbnailProps[] = [

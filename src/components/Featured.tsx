@@ -20,7 +20,7 @@ const Featured: React.FC<FeaturedProps> = ({ articles }) => {
                 </div>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-4 mt-4 ">
+            <div className="grid md:grid-cols-4 mx-24 mt-4 justify-center items-center ">
                 {articles.map((article, index) => (
                     <ArticleThumbnail key={index} article={article} /> // Pass each article as a prop to ArticleThumbnail
                 ))}
